@@ -1,19 +1,12 @@
-package com.example.task01;
-
+package com.example.task04;
 
 public class Point {
-    int x;
-    int y;
+    final int x;
+    final int y;
 
-    public Point(int x, int y) {
+    public Point(int x, int y){
         this.x = x;
         this.y = y;
-    }
-
-    void flip() {
-        int temp = x;
-        x = -y;
-        y = -temp;
     }
 
     public double distance(Point point){
@@ -21,7 +14,8 @@ public class Point {
         return d;
     }
 
-    public String toString() {
+
+    public String toString(){
         String result = String.format("(%d, %d)", this.x, this.y);
         return result;
     }
